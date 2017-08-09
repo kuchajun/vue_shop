@@ -1,7 +1,7 @@
 <template>
 	<div class="goods">
 		<header>
-			<router-link to='/'><img src="../../assets/img/leftback.png"/></router-link>
+			<a href="javascript:void(0);" @click='goback'><img src="../../assets/img/leftback.png"/></a>
 			<h2>商品详情</h2>
 			<router-link to='/'><img src="../../assets/img/addshopcar.png"/></router-link>
 		</header>
@@ -85,6 +85,7 @@
 	</div>
 </template>
 <script type="text/javascript">
+	import router from '../../router'
 	import comments from './comment.vue';
 	import options from './option.vue';
 	import { mapState } from 'vuex'
@@ -94,17 +95,13 @@
 			options
 		},
 		computed: mapState([
-		    'showoption'
+		    'showoption',
+		    'addcar'
 		]),
 		data(){
 			return{
 				collect:true,
-				addcar:{
-					add_1:false,
-					add_2:false,
-					add_3:false
-				},
-				//showoption:false,
+				
 				banner:[
 					{src:'../../static/img/testbanner1.png'},
 					{src:'../../static/img/testbanner1.png'},
@@ -121,13 +118,14 @@
 					'../../static/img/daishuohuo.png',
 					'../../static/img/daishuohuo.png'
 					]}
-					
 				]
-					
-				
 			}
 		},
 		methods:{
+			//返回上一级
+			goback:function(){
+				router.go(-1)
+			},
 			setcollect:function(){
 				if(this.collect){
 					this.collect=false;
@@ -139,12 +137,18 @@
 			coptions:function(n){
 				if(n==1){
 					this.addcar.add_1=true;
+					this.addcar.add_2=false;
+					this.addcar.add_3=false;
 				}else if(n==2){
+					this.addcar.add_1=false;
 					this.addcar.add_2=true;
+					this.addcar.add_3=false;
 				}else if(n==3){
+					this.addcar.add_1=false;
+					this.addcar.add_2=false;
 					this.addcar.add_3=true;
 				}
-				
+				this.$store.dispatch('CHANGE_FLAG')
 				this.showoption=true;
 			}
 		}

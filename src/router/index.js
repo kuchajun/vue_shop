@@ -7,6 +7,7 @@ import list from '@/components/list'
 import mine from '@/components/mine/index'
 import classify from '@/components/home/classify'
 import goods from '@/components/goods/index'
+import shopcart from '@/components/shopcart/index'
 Vue.use(Router)
 
 //const home={
@@ -30,13 +31,13 @@ Vue.use(Router)
 //		</div>
 //	`
 //}
-const shopcar={
-	template:`
-		<div>
-			购物车
-		</div>
-	`
-}
+//const shopcar={
+//	template:`
+//		<div>
+//			购物车
+//		</div>
+//	`
+//}
 
 const err={
 	template:`
@@ -55,7 +56,7 @@ export default new Router({
       children:[
       	{path:'',redirect:'home'},
       	{path:'home',component:home},
-      	{path:'shopcar',component:shopcar},
+      	{path:'shopcar',component:shopcart},
       	{path:'list',component:list},
       	{path:'mine',component:mine}
       ]
