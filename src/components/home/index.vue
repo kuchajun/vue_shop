@@ -82,16 +82,16 @@ export default{
 				{path:'/',name:'优质/呆萌/实惠',title:'特价商品',title1:'萌宝乐园篇',class:'title2'}
 			],
 			hotlist:[
-				{path:'/',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',price:'87',num:'10300'},
-				{path:'/',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',price:'108',num:'3555'},
-				{path:'/',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',price:'57',num:'2000'},
-				{path:'/',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',price:'63',num:'217'}
+				{path:'/goods',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',price:'87',num:'10300'},
+				{path:'/goods',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',price:'108',num:'3555'},
+				{path:'/goods',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',price:'57',num:'2000'},
+				{path:'/goods',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',price:'63',num:'217'}
 			],
 			bargainlist:[
-				{path:'/',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',nprice:'87',oprice:'120',num:'233'},
-				{path:'/',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',nprice:'65',oprice:'120',num:'24'},
-				{path:'/',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',nprice:'87',oprice:'120',num:'08'},
-				{path:'/',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',nprice:'87',oprice:'120',num:'988'}
+				{path:'/goods',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',nprice:'87',oprice:'120',num:'233'},
+				{path:'/goods',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',nprice:'65',oprice:'120',num:'24'},
+				{path:'/goods',src:'./static/img/hotimg1.png',name:'澳贝(AUBY)-益智玩具 老虎警长玩具车',nprice:'87',oprice:'120',num:'08'},
+				{path:'/goods',src:'./static/img/hotimg2.png',name:'澳贝(AUBY)-益智玩具 宝宝多功能手推车',nprice:'87',oprice:'120',num:'988'}
 			]
 		}
 	}

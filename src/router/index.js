@@ -3,41 +3,12 @@ import Router from 'vue-router'
 import mains from '@/components/mains'
 import login from '@/components/login'
 import home from '@/components/home/index'
-import list from '@/components/list'
 import mine from '@/components/mine/index'
 import classify from '@/components/home/classify'
 import goods from '@/components/goods/index'
 import shopcart from '@/components/shopcart/index'
+import list from '@/components/list/index'
 Vue.use(Router)
-
-//const home={
-//	template:`
-//		<div>
-//			首页
-//		</div>
-//	`
-//}
-//const list={
-//	template:`
-//		<div>
-//			列表页
-//		</div>
-//	`
-//}
-//const mine={
-//	template:`
-//		<div>
-//			我的
-//		</div>
-//	`
-//}
-//const shopcar={
-//	template:`
-//		<div>
-//			购物车
-//		</div>
-//	`
-//}
 
 const err={
 	template:`
@@ -57,7 +28,7 @@ export default new Router({
       	{path:'',redirect:'home'},
       	{path:'home',component:home},
       	{path:'shopcar',component:shopcart},
-      	{path:'list',component:list},
+      	{path:'list/:id',component:list},
       	{path:'mine',component:mine}
       ]
     },

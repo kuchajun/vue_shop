@@ -101,7 +101,6 @@
 		data(){
 			return{
 				collect:true,
-				
 				banner:[
 					{src:'../../static/img/testbanner1.png'},
 					{src:'../../static/img/testbanner1.png'},

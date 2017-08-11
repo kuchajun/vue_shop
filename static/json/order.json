@@ -1,0 +1,325 @@
+{
+	"data": [
+		{
+			"state": 1,
+			"time": "2016-08-7",
+			"order_num": "0887945456456",
+			"state_name":"待付款",
+			"list": [
+				{
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 50,
+					"price": 20,
+					"id": 1255,
+					"src": "../../../static/img/daishuohuo.png"
+				}, {
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 12,
+					"price": 99,
+					"id": 1234,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 2,
+			"time": "2016-09-7",
+			"order_num": "1215645641",
+			"state_name":"待发货",
+			"list": [
+				{
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "4541351BA",
+					"number": 23,
+					"price": 100,
+					"id": 1255,
+					"src": "../../../static/img/hotimg2.png"
+				}, {
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "2356415DD",
+					"number": 5,
+					"price": 39,
+					"id": 1255,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 3,
+			"time": "2017-09-9",
+			"order_num": "98454151",
+			"state_name":"待收货",
+			"list": [
+				{
+					"name": "小车车",
+					"brand": "澳贝",
+					"a_num": "45545351UU",
+					"number": 199,
+					"price": 5,
+					"id": 23465,
+					"src": "../../../static/img/hotimg2.png"
+				}
+			]
+		}, {
+			"state": 4,
+			"time": "2017-12-9",
+			"order_num": "98454151",
+			"state_name":"待评价",
+			"list": [
+				{
+					"name": "大车车",
+					"brand": "澳贝",
+					"a_num": "45545351SS",
+					"number": 10,
+					"price": 15,
+					"id": 99964,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 2,
+			"time": "2016-08-7",
+			"order_num": "0887945456456",
+			"state_name":"待发货",
+			"list": [
+				{
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 50,
+					"price": 20,
+					"id": 1255,
+					"src": "../../../static/img/daishuohuo.png"
+				}, {
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 12,
+					"price": 99,
+					"id": 1234,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 1,
+			"time": "2016-09-7",
+			"order_num": "1215645641",
+			"state_name":"待付款",
+			"list": [
+				{
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "4541351BA",
+					"number": 23,
+					"price": 100,
+					"id": 1255,
+					"src": "../../../static/img/hotimg2.png"
+				}, {
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "2356415DD",
+					"number": 5,
+					"price": 39,
+					"id": 1255,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 4,
+			"time": "2017-09-9",
+			"order_num": "98454151",
+			"state_name":"待评价",
+			"list": [
+				{
+					"name": "小车车",
+					"brand": "澳贝",
+					"a_num": "45545351UU",
+					"number": 199,
+					"price": 5,
+					"id": 23465,
+					"src": "../../../static/img/hotimg2.png"
+				}
+			]
+		}, {
+			"state": 3,
+			"time": "2017-12-9",
+			"order_num": "98454151",
+			"state_name":"待收货",
+			"list": [
+				{
+					"name": "大车车",
+					"brand": "澳贝",
+					"a_num": "45545351SS",
+					"number": 10,
+					"price": 15,
+					"id": 99964,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 1,
+			"time": "2016-08-7",
+			"order_num": "0887945456456",
+			"state_name":"付款",
+			"list": [
+				{
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 50,
+					"price": 20,
+					"id": 1255,
+					"src": "../../../static/img/daishuohuo.png"
+				}, {
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 12,
+					"price": 99,
+					"id": 1234,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 2,
+			"time": "2016-09-7",
+			"order_num": "1215645641",
+			"state_name":"待发货",
+			"list": [
+				{
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "4541351BA",
+					"number": 23,
+					"price": 100,
+					"id": 1255,
+					"src": "../../../static/img/hotimg2.png"
+				}, {
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "2356415DD",
+					"number": 5,
+					"price": 39,
+					"id": 1255,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 3,
+			"time": "2017-09-9",
+			"order_num": "98454151",
+			"state_name":"待收货",
+			"list": [
+				{
+					"name": "小车车",
+					"brand": "澳贝",
+					"a_num": "45545351UU",
+					"number": 199,
+					"price": 5,
+					"id": 23465,
+					"src": "../../../static/img/hotimg2.png"
+				}
+			]
+		}, {
+			"state": 4,
+			"time": "2017-12-9",
+			"order_num": "98454151",
+			"state_name":"待评价",
+			"list": [
+				{
+					"name": "大车车",
+					"brand": "澳贝",
+					"a_num": "45545351SS",
+					"number": 10,
+					"price": 15,
+					"id": 99964,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 2,
+			"time": "2016-08-7",
+			"order_num": "0887945456456",
+			"state_name":"待发货",
+			"list": [
+				{
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 50,
+					"price": 20,
+					"id": 1255,
+					"src": "../../../static/img/daishuohuo.png"
+				}, {
+					"name": "青色恐龙 创意工具车",
+					"brand": "澳贝",
+					"a_num": "283717As",
+					"number": 12,
+					"price": 99,
+					"id": 1234,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 1,
+			"time": "2016-09-7",
+			"order_num": "1215645641",
+			"state_name":"待付款",
+			"list": [
+				{
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "4541351BA",
+					"number": 23,
+					"price": 100,
+					"id": 1255,
+					"src": "../../../static/img/hotimg2.png"
+				}, {
+					"name": "笑脸座椅音乐机 创意新奇特",
+					"brand": "澳贝",
+					"a_num": "2356415DD",
+					"number": 5,
+					"price": 39,
+					"id": 1255,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}, {
+			"state": 4,
+			"time": "2017-09-9",
+			"order_num": "98454151",
+			"state_name":"待评价",
+			"list": [
+				{
+					"name": "小车车",
+					"brand": "澳贝",
+					"a_num": "45545351UU",
+					"number": 199,
+					"price": 5,
+					"id": 23465,
+					"src": "../../../static/img/hotimg2.png"
+				}
+			]
+		}, {
+			"state": 3,
+			"time": "2017-12-9",
+			"order_num": "98454151",
+			"state_name":"待收货",
+			"list": [
+				{
+					"name": "大车车",
+					"brand": "澳贝",
+					"a_num": "45545351SS",
+					"number": 10,
+					"price": 15,
+					"id": 99964,
+					"src": "../../../static/img/hotimg1.png"
+				}
+			]
+		}
+	]
+}

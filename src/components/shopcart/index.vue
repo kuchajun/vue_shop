@@ -3,7 +3,7 @@
 		<!--头部-->
 		<header>
 			<h2>购物车</h2>
-			<span>编辑</span>
+			<span @click='change_edit'>{{edit_s?"完成":"编辑"}}</span>
 		</header>
 		<div class="zanwei">
 			
@@ -13,27 +13,48 @@
 		</div>
 		<div class="handle">
 			<div class="check">
-				<i></i>
+				<i :class="all_check?'iactive':''" @click='allcheck'></i>
 				<span>全选</span>
 			</div>
 			<div class="operation">
 				<i>合计：</i>
-				<span>￥2500.00</span>
-				<span>结算(0)</span>
+				<span>￥{{total}}</span>
+				<span>结算({{check_num}})</span>
 			</div>
 		</div>
+		<transition name='fade'>
+			<guige v-if='guige_s'></guige>
+		</transition>
+			
 	</div>
 </template>
 <script type="text/javascript">
 	import item from './item.vue';
 	import { mapState } from 'vuex';
+	import guige from "./guige.vue";
 	export default{
 		components:{
-			item
+			item,
+			guige
 		},
 		computed:mapState([
-			'shopcart'
-		])
+			'shopcart',
+			'total',
+			'all_check',
+			'check_num',
+			'edit_s',
+			'guige_s'
+		]),
+		methods:{
+			allcheck:function(){
+				console.log(233)
+				this.$store.dispatch('CHANGE_ALL_CHECK')
+			},
+			//改变编辑状态
+			change_edit:function(){
+				this.$store.dispatch('CHANGE_EDIT')
+			}
+		}
 	}
 	
 </script>
@@ -110,6 +131,11 @@ header{
 			border-radius: u(12);
 			
 		}
+		.iactive{
+			background: url(../../assets/img/shopok.png) no-repeat left top;
+			background-size:u(24) u(24);
+			border: none;
+		}
 		span{
 			font-size: u(30);
 			color: #333333;
@@ -124,6 +150,7 @@ header{
 			font-size: u(24);
 			color: #000000;
 		}
+		
 		span:nth-of-type(1){
 			font-size: u(24);
 			color: #ff4350;
@@ -141,5 +168,53 @@ header{
 			color: #f1f1f1;
 		}
 	}
+}
+.fade-enter-active{
+	-webkit-animation:fadeInRightBig 1s .2s ease both;
+	-moz-animation:fadeInRightBig 1s .2s ease both;
+}
+.fade-leave-active{
+	-webkit-animation:fadeInRightBig_b 1s .2s ease both;
+	-moz-animation:fadeInRightBig_b 1s .2s ease both;
+}
+/*.fade-enter,.fade-leave-to{
+	transform:translateX(u(640))
+}
+.fade-enter-to,.fade-leave{
+	transform:translateX(0)
+}*/
+
+@-webkit-keyframes fadeInRightBig{
+0%{
+-webkit-transform:translateX(u(0))}	
+
+100%{
+	
+-webkit-transform:translateX(0)}
+}
+@-moz-keyframes fadeInRightBig{
+0%{
+	
+-moz-transform:translateX(u(640))}
+100%{
+	
+-moz-transform:translateX(0)}
+}
+
+@-webkit-keyframes fadeInRightBig_b{
+0%{
+	
+-webkit-transform:translateX(u(0))}
+100%{
+	
+-webkit-transform:translateX(u(640))}
+}
+@-moz-keyframes fadeInRightBig_b{
+0%{
+	
+-moz-transform:translateX(0)}
+100%{
+	
+-moz-transform:translateX(u(640))}
 }
 </style>

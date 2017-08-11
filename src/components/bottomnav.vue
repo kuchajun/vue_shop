@@ -14,7 +14,7 @@
 			</router-link>
 		</li>
 		<li>
-			<router-link to="/list" >
+			<router-link to="/list/0" >
 				<i class="ico3"></i>
 				<span>订单</span>
 			</router-link>
@@ -79,6 +79,8 @@
 			}
 		}
 		.router-link-active{
+			-webkit-animation:pulse 0.1s .1s ease both;
+			-moz-animation:pulse 0.1s .1s ease both;
 			.ico1{
 				background: url(../assets/img/home2.png) no-repeat center center;
           		background-size: u(38) u(36);
@@ -114,4 +116,14 @@
 			font-size:u(20) ;
 		}
 	}
+	
+
+@-webkit-keyframes pulse{
+0%{-webkit-transform:scale(0.6)}
+100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes pulse{
+0%{-moz-transform:scale(0.6)}
+100%{-moz-transform:scale(1)}
+}
 </style>

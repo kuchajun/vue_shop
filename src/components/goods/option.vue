@@ -57,8 +57,6 @@
 				console.log(num)
 				this.$store.dispatch('CHANGE_NUM',num)
 			}
-			
-			
 		}
 	}
 </script>
