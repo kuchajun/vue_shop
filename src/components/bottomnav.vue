@@ -14,7 +14,7 @@
 			</router-link>
 		</li>
 		<li>
-			<router-link to="/list/0" >
+			<router-link :to="{path:'/list',query:{id:0}}" >
 				<i class="ico3"></i>
 				<span>订单</span>
 			</router-link>

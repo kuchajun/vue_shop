@@ -8,6 +8,7 @@ import classify from '@/components/home/classify'
 import goods from '@/components/goods/index'
 import shopcart from '@/components/shopcart/index'
 import list from '@/components/list/index'
+import bargain from '@/components/bargain/index'
 Vue.use(Router)
 
 const err={
@@ -28,7 +29,7 @@ export default new Router({
       	{path:'',redirect:'home'},
       	{path:'home',component:home},
       	{path:'shopcar',component:shopcart},
-      	{path:'list/:id',component:list},
+      	{path:'list',component:list},
       	{path:'mine',component:mine}
       ]
     },
@@ -47,6 +48,11 @@ export default new Router({
     	name:'login',
     	component:login
     },
+	{
+		path:'/bargain',
+		name:'bargain',
+		component:bargain
+	},
     {
     	path:'*',
     	name:'404',

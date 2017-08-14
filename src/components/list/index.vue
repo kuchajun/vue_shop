@@ -9,32 +9,43 @@
 		</header>
 		<ul class="nav">
 			<li v-for="(item,index) in list_class">
-				<router-link :to='item.path'>{{item.name}}</router-link>
+				<router-link :class='params_l.id==index?"a_active":""' :to='{path:item.path,query:{id:index}}'>{{item.name}}</router-link>
 			</li>
 		</ul>
 		<ul class="order_list">
-			<li class="list_li" v-for="(item,index) in order_list.data" :key="index">
+			<li class="list_li" v-for="(item,index) in order_list" :key="index">
 				<item :item="item"></item>
 			</li>
 		</ul>
-		
-		
 	</div>
 </template>
 <script type="text/javascript">
 import { mapState } from 'vuex'
 import item from './item.vue'
+import router from 'vue-router'
 export default {
+	
 	components:{
 		item
 	},
-	computed: mapState([
-	    'list_class',
-	    'order_list'
-	]),
-	beforeMount(){
-		this.$store.dispatch("GET_ORDER_LIST")
-	}
+	computed:{
+		 ...mapState([
+		    'list_class',
+		    'order_list'
+		]),
+		params_l:function(){
+			return this.$route.query
+		}
+	},
+	mounted(){
+		console.log(this.params_l)
+		this.$store.dispatch("GET_ORDER_LIST",this.params_l)
+	},
+	watch:{
+		"params_l"(){
+			this.$store.dispatch("GET_ORDER_LIST",this.params_l)
+		}
+	},
 }
 </script>
 <style lang="scss" scoped="scoped" type="text/css">
@@ -119,7 +130,7 @@ header{
 			color: #333333;
 			box-sizing: border-box;
 		}
-		.router-link-active{
+		.a_active{
 			color: #ff3259;
 			border-color: #ff3259;
 		}

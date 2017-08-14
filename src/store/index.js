@@ -44,13 +44,14 @@ const store = new Vuex.Store({
 		now_guige_num:0,
 		//订单分类
 		list_class:[
-			{path:"/list/0",name:"全部"},
-			{path:"/list/1",name:"代付款"},
-			{path:"/list/2",name:"待发货"},
-			{path:"/list/3",name:"待收货"},
-			{path:"/list/4",name:"待评价"}
+			{path:"/list",name:"全部"},
+			{path:"/list",name:"代付款"},
+			{path:"/list",name:"待发货"},
+			{path:"/list",name:"待收货"},
+			{path:"/list",name:"待评价"}
 		],
-		order_list:[]
+		order_list:[],
+		bargain_list:[]
 		
   },
   actions: {
@@ -112,8 +113,8 @@ const store = new Vuex.Store({
     		commit('SET_GUIGE_B')
     },
     //获取订单列表
-    GET_ORDER_LIST:function({commit}){
-    		commit('SET_ORDER_LIST')
+    GET_ORDER_LIST:function({commit},params){
+    		commit('SET_ORDER_LIST',params)
     }
     
     
@@ -231,14 +232,28 @@ const store = new Vuex.Store({
     	state.guige_s=false;
     },
     //获取订单列表
-    SET_ORDER_LIST:(state) =>{
+    SET_ORDER_LIST:(state,params) =>{
     	axios({
 					  url: '/static/json/order.json'
 					})
 					.then((response) => {
-						console.log(response.data)
+						//console.log(response.data)
 						if(response.data){
-							state.order_list=response.data
+							console.log(params)
+							if(params.id==0){
+								state.order_list=response.data.data
+							}else{
+								
+								state.order_list=[];
+								for(var i=0;i<response.data.data.length;i++){
+									
+									if(response.data.data[i].state==params.id){
+										state.order_list.push(response.data.data[i])
+										
+									}
+								}
+							}
+							
 						}
 					})
     }

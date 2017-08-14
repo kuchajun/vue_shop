@@ -40,7 +40,7 @@ export default{
 		total:function(){
 			var total=0;
 			for(var i=0;i<this.item.list.length;i++){
-				console.log(this.item.list[i].number)
+				//console.log(this.item.list[i].number)
 				total+=this.item.list[i].number*this.item.list[i].price
 			}
 			//console.log(total)

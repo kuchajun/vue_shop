@@ -9,7 +9,7 @@
 			
 		</div>
 		<div class="item">
-			<item :item='item' :index='index' v-for="(item,index) in shopcart" :key="index"></item>
+			<item :edit_s='edit_s'  :item='item' :index='index' v-for="(item,index) in shopcart" :key="index"></item>
 		</div>
 		<div class="handle">
 			<div class="check">
@@ -33,6 +33,11 @@
 	import { mapState } from 'vuex';
 	import guige from "./guige.vue";
 	export default{
+		data(){
+			return {
+				edit_s:false,
+			}
+		},
 		components:{
 			item,
 			guige
@@ -40,19 +45,18 @@
 		computed:mapState([
 			'shopcart',
 			'total',
-			'all_check',
 			'check_num',
-			'edit_s',
-			'guige_s'
+			'guige_s',
+			'all_check'
 		]),
 		methods:{
 			allcheck:function(){
-				console.log(233)
+				//console.log(233)
 				this.$store.dispatch('CHANGE_ALL_CHECK')
 			},
 			//改变编辑状态
 			change_edit:function(){
-				this.$store.dispatch('CHANGE_EDIT')
+				this.edit_s=!this.edit_s
 			}
 		}
 	}

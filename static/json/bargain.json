@@ -1,0 +1,69 @@
+
+[
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 130,
+		"old_price":120,
+		"new_price": 63,
+		"src": "../../../static/img/daishuohuo.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 102,
+		"old_price":33,
+		"new_price": 15,
+		"src": "../../../static/img/hotimg1.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 99,
+		"old_price":77,
+		"new_price": 36,
+		"src": "../../../static/img/hotimg2.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 10,
+		"old_price":65,
+		"new_price": 35,
+		"src": "../../../static/img/listtest.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 8,
+		"old_price":350,
+		"new_price": 249,
+		"src": "../../../static/img/hotimg1.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 7,
+		"old_price":42,
+		"new_price": 12,
+		"src": "../../../static/img/hotimg2.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 999,
+		"old_price":800,
+		"new_price": 200,
+		"src": "../../../static/img/listtest.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 500,
+		"old_price":180,
+		"new_price": 150,
+		"src": "../../../static/img/daishuohuo.png"
+	},
+	{
+		"name": "澳贝(AUBY) 益智玩具 猎人小象声光机",
+		"number": 45,
+		"old_price":150,
+		"new_price": 89,
+		"src": "../../../static/img/hotimg2.png"
+	}
+	
+	
+]
+

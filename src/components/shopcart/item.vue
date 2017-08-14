@@ -38,10 +38,10 @@
 	import router from '../../router'
 	import { mapState } from 'vuex'
 	export default{
-		props:['item','index'],
-		computed: mapState([
-		    'edit_s'
-		]),
+		props:['item','index','edit_s'],
+//		computed: mapState([
+//		    'edit_s'
+//		]),
 		methods:{
 			changestate:function(index){
 				console.log(index)
